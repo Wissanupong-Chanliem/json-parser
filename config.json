@@ -1,0 +1,27 @@
+{
+    "project_name":"json-parser",
+    "outdir":"./build",
+    "src":{
+        "main":{
+            "path":"./src/main.cpp",
+            "dependencies":["json"],
+            "optimization":0
+        },
+        "tokenizer":{
+            "path":"./src/modules/tokenizer/tokenizer.cpp",
+            "dependencies":[],
+            "optimization":0
+        },
+        "json":{
+            "path":"./src/modules/json.cpp",
+            "dependencies":["tokenizer"],
+            "optimization":0
+        }
+    },
+    "test":{
+        "tokenize":{
+            "path":"./src/test/tokenize.cpp",
+            "dependencies":["tokenizer"]
+        }
+    }
+}
