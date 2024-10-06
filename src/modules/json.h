@@ -10,7 +10,6 @@
 
 namespace json{
     class jsonViewer;
-    class jsonViewer;
     typedef std::unordered_map<std::string,jsonViewer*> json_object;
     typedef std::vector<jsonViewer*> json_array;
 
